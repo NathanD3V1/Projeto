@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conectando Oportunidades</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <i class="fas fa-hands-helping"></i>
+                <span>Conectando Oportunidades</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#opportunities">Oportunidades</a></li>
+                <li><a href="#register">Cadastrar</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Conectando Oportunidades</h1>
+            <p class="hero-subtitle">Conectamos pessoas em situação de vulnerabilidade a oportunidades de cursos, estágios e doações</p>
+            <div class="hero-buttons">
+                <a href="#register" class="btn btn-primary">Buscar Oportunidades</a>
+                <a href="#register" class="btn btn-secondary">Oferecer Ajuda</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Sobre o Projeto</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>O <strong>Conectando Oportunidades</strong> é uma plataforma inovadora que visa contribuir para a erradicação da pobreza e promoção do trabalho decente, alinhada com os Objetivos de Desenvolvimento Sustentável (ODS) da ONU.</p>
+                    
+                    <p>Nossa missão é criar pontes entre pessoas em situação de vulnerabilidade social e oportunidades reais de crescimento, desenvolvimento e inserção no mercado de trabalho. Acreditamos que o acesso à educação, capacitação profissional e oportunidades de trabalho são fundamentais para transformar vidas e construir uma sociedade mais justa e igualitária.</p>
+                    
+                    <p>Através de nossa plataforma, conectamos:</p>
+                    <ul class="about-list">
+                        <li><i class="fas fa-graduation-cap"></i> <strong>Cursos gratuitos</strong> de capacitação profissional</li>
+                        <li><i class="fas fa-heart"></i> <strong>Programas de doação</strong> e apoio social</li>
+                        <li><i class="fas fa-handshake"></i> <strong>Parcerias</strong> com empresas e instituições</li>
+                    </ul>
+                    
+                    <div class="partnership-highlight">
+                        <h3><i class="fas fa-star"></i> Parceria com Aprenda Mais Brasil</h3>
+                        <p>Estabelecemos uma parceria estratégica com a plataforma <strong>Aprenda Mais</strong>, uma iniciativa do Ministério da Educação (MEC) que oferece cursos online, abertos e gratuitos em diversas áreas do conhecimento, todos com certificação oficial.</p>
+                        <div class="partnership-benefits">
+                            <div class="benefit">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Cursos 100% gratuitos</span>
+                            </div>
+                            <div class="benefit">
+                                <i class="fas fa-certificate"></i>
+                                <span>Certificação oficial</span>
+                            </div>
+                            <div class="benefit">
+                                <i class="fas fa-clock"></i>
+                                <span>Estude no seu ritmo</span>
+                            </div>
+                            <div class="benefit">
+                                <i class="fas fa-infinity"></i>
+                                <span>Sem limite de cursos</span>
+                            </div>
+                        </div>
+                        <a href="https://hmg.aprendamais.mec.gov.br" target="_blank" class="btn btn-primary partnership-btn">
+                            <i class="fas fa-external-link-alt"></i> Acessar Aprenda Mais
+                        </a>
+                    </div>
+                    
+                    <div class="ods-info">
+                        <div class="ods-card">
+                            <div class="ods-number">1</div>
+                            <h3>Erradicação da Pobreza</h3>
+                            <p>ODS Principal</p>
+                        </div>
+                        <div class="ods-card">
+                            <div class="ods-number">8</div>
+                            <h3>Trabalho Decente</h3>
+                            <p>ODS Secundária</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>10+</h3>
+                        <p>Pessoas Cadastradas</p>
+                    </div>
+                    <div class="stat">
+                        <h3>15+</h3>
+                        <p>Oportunidades Disponíveis</p>
+                    </div>
+                    <div class="stat">
+                        <h3>80%</h3>
+                        <p>Taxa de Sucesso</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Opportunities Section -->
+    <section id="opportunities" class="opportunities">
+        <div class="container">
+            <h2>Oportunidades Disponíveis</h2>
+            <div class="search-filters">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Buscar oportunidades...">
+                </div>
+                <div class="filters">
+                    <select id="categoryFilter">
+                        <option value="">Todas as categorias</option>
+                        <option value="curso">Cursos</option>
+                        <option value="estagio">Estágios</option>
+                    </select>
+                    <select id="locationFilter">
+                        <option value="">Todas as localidades</option>
+                        <option value="sp">Salvador</option>
+                        <option value="rj">Feira de Santana</option>
+                        <option value="mg">Camaçari</option>
+                        <option value="online">Online</option>
+                    </select>
+                </div>
+            </div>
+            <div class="opportunities-grid" id="opportunitiesGrid">
+                <!-- Opportunities will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Register Section -->
+    <section id="register" class="register">
+        <div class="container">
+            <h2>Como Participar</h2>
+            <div class="register-tabs">
+                <button class="tab-btn active" data-tab="seeker">Buscar Oportunidades</button>
+                <button class="tab-btn" data-tab="provider">Oferecer Ajuda</button>
+            </div>
+            
+            <div class="tab-content">
+                <div id="seeker" class="tab-panel active">
+                    <form class="register-form" id="seekerForm">
+                        <h3>Cadastro para Buscar Oportunidades</h3>
+                        <div class="form-group">
+                            <label for="seekerName">Nome Completo</label>
+                            <input type="text" id="seekerName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="seekerEmail">E-mail</label>
+                            <input type="email" id="seekerEmail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="seekerPhone">Telefone</label>
+                            <input type="tel" id="seekerPhone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="seekerLocation">Localização</label>
+                            <select id="seekerLocation" required>
+                                <option value="">Selecione sua cidade</option>
+                                <option value="sp">Salvador</option>
+                                <option value="rj">Feira de Santana</option>
+                                <option value="mg">Camaçari</option>
+                                <option value="online">Online</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="seekerInterests">Áreas de Interesse</label>
+                            <div class="checkbox-group">
+                                <label><input type="checkbox" value="tecnologia"> Tecnologia</label>
+                                <label><input type="checkbox" value="saude"> Saúde</label>
+                                <label><input type="checkbox" value="educacao"> Educação</label>
+                                <label><input type="checkbox" value="administracao"> Administração</label>
+                                <label><input type="checkbox" value="vendas"> Vendas</label>
+                                <label><input type="checkbox" value="outros"> Outros</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="seekerSituation">Situação Atual</label>
+                            <textarea id="seekerSituation" placeholder="Conte-nos um pouco sobre sua situação atual e como podemos ajudar..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Cadastrar</button>
+                    </form>
+                </div>
+                
+                <div id="provider" class="tab-panel">
+                    <form class="register-form" id="providerForm">
+                        <h3>Cadastro para Oferecer Ajuda</h3>
+                        <div class="form-group">
+                            <label for="providerName">Nome da Empresa/Instituição</label>
+                            <input type="text" id="providerName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="providerContact">Nome do Responsável</label>
+                            <input type="text" id="providerContact" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="providerEmail">E-mail</label>
+                            <input type="email" id="providerEmail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="providerPhone">Telefone</label>
+                            <input type="tel" id="providerPhone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="opportunityType">Tipo de Oportunidade</label>
+                            <select id="opportunityType" required>
+                                <option value="">Selecione o tipo</option>
+                                <option value="curso">Curso</option>
+                                <option value="estagio">Estágio</option>
+                                <option value="doacao">Doação</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="opportunityTitle">Título da Oportunidade</label>
+                            <input type="text" id="opportunityTitle" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="opportunityDescription">Descrição</label>
+                            <textarea id="opportunityDescription" placeholder="Descreva a oportunidade em detalhes..." required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="opportunityRequirements">Requisitos</label>
+                            <textarea id="opportunityRequirements" placeholder="Quais são os requisitos para participar?"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="opportunityLocation">Localização</label>
+                            <input type="text" id="opportunityLocation" placeholder="Cidade, estado ou 'Online'">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Cadastrar Oportunidade</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>E-mail</h3>
+                            <p>palomadates72@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Telefone</h3>
+                            <p>(71) 99140-1189</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Endereço</h3>
+                            <p>Salvador, Bahia - Brasil</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="contactName">Nome</label>
+                        <input type="text" id="contactName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactEmail">E-mail</label>
+                        <input type="email" id="contactEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactSubject">Assunto</label>
+                        <input type="text" id="contactSubject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactMessage">Mensagem</label>
+                        <textarea id="contactMessage" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Conectando Oportunidades</h3>
+                    <p>Conectamos pessoas em situação de vulnerabilidade a oportunidades de crescimento e desenvolvimento.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/pallomasantanaa"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Links Úteis</h3>
+                    <ul>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#opportunities">Oportunidades</a></li>
+                        <li><a href="#register">Cadastrar</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>ODS</h3>
+                    <ul>
+                        <li><a href="#">ODS 1 - Erradicação da Pobreza</a></li>
+                        <li><a href="#">ODS 8 - Trabalho Decente</a></li>
+                        <li><a href="#">Agenda 2025</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Conectando Oportunidades. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
